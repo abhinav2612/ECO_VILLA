@@ -1,0 +1,224 @@
+*{
+    box-sizing:
+    border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    align-content: center;
+    background-image: linear-gradient(rgb(248, 151, 41), rgb(211, 209, 84));
+    min-height: 100vh;
+}
+
+/* Section one- ABout us */
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+    width: 85vw;
+    margin: 30px auto;
+}
+#img1{
+    background: url("/images/eco.jpj.jpg") center/cover no-repeat;
+}
+.content{
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+}
+.content span{
+    height: 80px;
+    padding-top: 20px;
+    text-align: center;
+}
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+.links{
+    margin: 15px 0;
+}
+.links li{
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 10px 1px;
+    margin: 3px;
+    width: 160px;
+    text-align: center;
+}
+.links li a{
+    text-transform: uppercase;
+    color: rgb(10, 15, 1);
+    text-decoration: none;
+}
+.links li:hover{
+    border-color: rgb(71, 71, 62);
+}
+.links li:hover a{
+    color: rgb(179, 83, 6)
+}   
+
+/* Our concern */
+#content-c{
+    background: rgb(245, 244, 244);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height:700px 700px;
+    
+    align-items: center;
+}
+#content-c h1{
+    font-size: 36px;
+    font-weight: 500;
+    height: 100px;
+    color: #000;
+    text-align: center;
+}
+#content-c p{
+    font-weight: 300;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* services */
+.content-s{
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* transform: translate(-50%, -50%); */
+}
+.content-s h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+}
+.content-s span{
+    height: 90px;
+    padding-top: 40px;
+    text-align: center;
+    width: 90%;
+}
+.content-s p{
+    font-weight: 300;
+    width: 90%;
+    line-height: 1.7;
+}
+#img3{
+    background: url("/images/poll2.jpg") center/cover no-repeat;  
+}
+
+/* Pictures grid */
+.row{
+    margin: 70px;
+    display: flex;
+}
+.column {
+    background-color: rgb(236, 235, 235);
+   
+}
+.column img {
+    height: 143px;
+    margin: auto ;
+    display: block;
+}   
+
+/* Loop-holes */
+#content-l{
+    background: whitesmoke;
+    text-align: center;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    height:100px;
+    align-items: center;
+}
+#content-l h1{
+    font-size: 36px;
+    font-weight: 500;
+    height: 100px;
+    color: #000;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    /* color: white; */
+  }
+
+  #center {
+    text-align: center;
+    font-weight: 1000;
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    background-color: rgb(240, 233, 175);
+    opacity: 0.7;
+    color: rgb(14, 13, 13);
+    left: 100%;
+    transform: translate(-50%, -50%);
+  }  
+  
+.image {
+    display: block;
+    width: 190%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f6f8aa;
+  }
+  .hide {
+    display: none;
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay:hover + .hide{
+      display: block;
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.9;
+  }
