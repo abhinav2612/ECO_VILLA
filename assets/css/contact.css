@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
-
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+} 
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	
 } 
+.contact-start{
+  -webkit-box-align: center;
+          align-items: center;
+  background: #ffffff;   
+  background: -webkit-linear-gradient(to right, #ffffff, #ffffff);
+  background: linear-gradient(to right, #ffffff, #ffffff); 
+  display: -webkit-box;
+  display: flex;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 100vh;
+  -webkit-box-pack: center;
+          justify-content: center;
+} 
 .contact-wrapper{
-  background:#fff;
+  background:#ffffff;
   
-  border-radius: .75em;
   padding:4em 2em;
   width:70em;
   display:flex;
@@ -175,20 +191,17 @@ form> .form-row > button:hover{
   -webkit-transform:translateY(-0.50em);
    transform:translateY(-0.50em);
 }
-@media (max-width:767px){
+@media screen and (max-width:768px){
   .contact-wrapper{
     flex-direction: column;
-	padding-right:0px;
   }
   .left_side,
   .right_side{
-    width:50%;
-	padding-right:0px;
-    
+    width:100%;
+    padding:0 3em;
   }
   .socials-wrapper > h2:after,
   .socials-wrapper > h2:before{
     width:10.5%;
-	padding-right:0px;
   }
 }
