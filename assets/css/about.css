@@ -28,7 +28,7 @@ section{
     margin: 30px auto;
 }
 #img1{
-    background: url("/assets/images/eco.jpj.jpg") center/cover no-repeat;
+    
     -webkit-box-shadow: 2px 2px 4px 4px black;
 }
 .content{
@@ -154,7 +154,7 @@ section{
     line-height: 1.7;
 }
 #img3{
-    background: url("/assets/images/poll2.jpg") center/cover no-repeat;  
+    background: url("./assets/images/poll2.jpg") center/cover no-repeat;  
     -webkit-box-shadow: 2px 2px 4px 4px black;
 }
 
@@ -467,8 +467,21 @@ h2{
 @media (max-width: 600px){
 	.footer{
 		padding: 15px;
+		
 	}
 	main{
 		font-size: 55px;
+	}
+}
+@media screen and (max-width:768px){
+	section{
+		width:900px;
+		
+	}
+	#content-t{
+		width:600px;
+	}
+	#loops{
+		width:900px;
 	}
 }
