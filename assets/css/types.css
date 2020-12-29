@@ -20,7 +20,7 @@ h3 {
 body {
   background-color: rgb(255, 255, 255);
   margin: 0;
-  text-align: center;
+  /*text-align: center;*/
 }
 .cards{
   margin-left: 13rem;
